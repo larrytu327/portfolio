@@ -1,0 +1,279 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Larry Tu
+
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+        style
+            | /* Target Font Awesome brands class (fab) and specific icons */
+            | .fab.fa-linkedin-in,
+            | .fab.fa-github {
+            |     font-size: 20px; /* Adjust the font size as needed */
+            | }
+
+    body#page-top
+
+        // Navigation
+        nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+            a.navbar-brand.js-scroll-trigger(href='#page-top')
+                span.d-block.d-lg-none Larry Tu
+                span.d-none.d-lg-block
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile_square.jpg', alt='Larry Tu')
+            button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarResponsive.collapse.navbar-collapse
+                ul.navbar-nav
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#about') About
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#projects') Projects
+                    //- li.nav-item
+                    //-     a.nav-link.js-scroll-trigger(href='#education') Education
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#skills') Skills
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#resume') Resume
+                    li.social-icons
+                        a.social-icon(href='https://www.linkedin.com/in/larry-tu/' target="_blank")
+                            i.fab.fa-linkedin-in
+                        a.social-icon(href='https://github.com/larrytu327' target="_blank")
+                            i.fab.fa-github
+                    //- li.nav-item
+                    //-     a.nav-link.js-scroll-trigger(href='#awards') Awards
+
+        // Page Content
+        .container-fluid.p-0
+
+            // About
+            section#about.resume-section
+                .resume-section-content
+                    h1.mb-0
+                        | Larry 
+                        span.text-primary Tu
+                    .subheading.mb-5
+                        | San Francisco, CA | 
+                        a(href='mailto:larrytu327@gmail.com') larrytu327@gmail.com
+                    p.lead.mb-5
+                        | I am a full stack software engineer, passionate about helping others through making technology more accessible. I enjoy working on teams and accomplishing goals together. I take initiative, while being coachable, and lead by example. I excel in problem solving by taking time to understand the context and details while being flexible and adapting to issues that arise.
+                    .social-icons
+                        a.social-icon(href='https://www.linkedin.com/in/larry-tu/')
+                            i.fab.fa-linkedin-in
+                        a.social-icon(href='https://github.com/larrytu327')
+                            i.fab.fa-github
+                        //- a.social-icon(href='https://www.instagram.com/thelarrytu/')
+                        //-     i.fab.fa-instagram
+
+            hr.m-0
+
+            // Projects
+            section#projects.resume-section
+               .resume-section-content
+                    h2.mb-5 Projects
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Uno Card Game
+                            .subheading.mb-3 JavaScript, HTML, CSS
+                            p
+                                | Designed and incorporated a responsive user interface for a vanilla JavaScript two person Uno card game using HTML, CSS, and JavaScript. Optimized game performance and minimized resource usage by implementing efficient algorithms.
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Winstagram
+                            .subheading.mb-3 JavaScript, ExpressJS, MongoDB, Mongoose
+                            p
+                                | Created a full CRUD image sharing application using MongoDB, ExpressJS, JavaScript, and NodeJS. Implemented user authentication and authorization as a part of the application’s functionality. Established front end and back end and hosted with Netlify.
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Restaurant Recommendations
+                            .subheading.mb-3 React, Bootstrap, CSS, JSON, Node.js
+                            p
+                                | Restaurant recommendations applicaiton that allows users to see list of restaurants in San Francisco that have been recommended by users who have visited the site before. The user will be able to browse through a list of restaurants in the yelp API and add that restaurant to the list of recommended restaurants. On the recommended list page users will be able to create there own restaurant to recommend by entering its required information in the input field with full CRUD capability. Technologied used include React, JSON, Bootstrap, and Node.js.
+                        //- .flex-shrink-0
+                        //-     span.text-primary July 2010 - December 2011
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Recipe App
+                            .subheading.mb-3 Django, JavaScript, CSS, Postgresql, Neon
+                            p
+                                | A full stack application with CRUD ability, created with Django, CSS, JavaScript, Postgresql with a Neon database. This application allows users to create/edit/delete recipes while also allowing them to add ingredients from different recipes to a grocery shopping list.
+                        //- .flex-shrink-0
+                        //-     span.text-primary September 2008 - June 2010
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between
+                        .flex-grow-1
+                            h3.mb-0 ConnectEd
+                            .subheading.mb-3 Django, JavaScript, CSS, Bootstrap, Postgresql, Neon
+                            p
+                                | A full-stack application that uses Django (front and back end), JavaScript, CSS, Bootstrap, Postgresql, and Neon database. ConnectEd is a platform designed to foster seamless communication, collaboration, and shared success among parents, teachers, and students. Through ConnectEd, parents can stay informed about their child's academic progress, receive timely updates, and communicate directly with teachers. Teachers can easily share important information, assignments, and announcements with both parents and students. Students can actively participate in discussions, access learning resources, and connect with their peers. With ConnectEd, the educational experience becomes interactive, engaging, and inclusive, ensuring that everyone involved is connected and empowered to achieve their fullest potential.
+                        //- .flex-shrink-0
+                        //-     span.text-primary September 2008 - June 2010
+                    
+
+            hr.m-0
+
+            //- // Education
+            //- section#education.resume-section
+            //-     .resume-section-content
+            //-         h2.mb-5 Education
+
+            //-         .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+            //-             .flex-grow-1
+            //-                 h3.mb-0 General Assembly
+            //-                 .subheading.mb-3 Certificate, Software Engineering Immersive
+            //-             .flex-shrink-0
+            //-                 span.text-primary January 2023 - July 2023
+
+            //-         .d-flex.flex-column.flex-md-row.justify-content-between
+            //-             .flex-grow-1
+            //-                 h3.mb-0 San Jose State University
+            //-                 .subheading.mb-3 Masters, Social Work
+            //-             .flex-shrink-0
+            //-                 span.text-primary August 2014 - June 2017
+
+            //-         .d-flex.flex-column.flex-md-row.justify-content-between
+            //-             .flex-grow-1
+            //-                 h3.mb-0 University of California, San Diego
+            //-                 .subheading.mb-3 Bachelor of Science, Animal Physiology and Neurosciences
+            //-             .flex-shrink-0
+            //-                 span.text-primary September 2003 - June 2007
+
+            //- hr.m-0
+
+            // Skills
+            section#skills.resume-section
+                .resume-section-content
+                    h2.mb-5 Skills
+                    .subheading.mb-3 Programming Languages & Tools
+                    ul.list-inline.dev-icons
+                        li.list-inline-item
+                            i.fab.fa-html5
+                        li.list-inline-item
+                            i.fab.fa-css3-alt
+                        li.list-inline-item
+                            i.fab.fa-react
+                        li.list-inline-item
+                            i.fab.fa-node-js
+                        //- li.list-inline-item
+                        //-     i.fab.fa-postgresql
+                        li.list-inline-item
+                            i.fab.fa-python
+                        li.list-inline-item
+                            i.fab.fa-bootstrap
+                        //- li.list-inline-item
+                        //-     i.fab.fa-jquery
+                        //- li.list-inline-item
+                        //-     i.fab.fa-express-js
+                        //- li.list-inline-item
+                        //-     i.fab.fa-mongodb 
+                        //- li.list-inline-item
+                        //-     i.fab.fa-django 
+                        //- li.list-inline-item
+                        //-     i.fab.fa-mongoose 
+                        li.list-inline-item
+                            i.fab.fa-github 
+                        li.list-inline-item
+                            i.fab.fa-git 
+                        //- li.list-inline-item
+                        //-     i.fab.fa-render 
+                        //- li.list-inline-item
+                        //-     i.fab.fa-postman    
+                    //- .subheading.mb-3 Workflow
+                    //- ul.fa-ul.mb-0
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Mobile-First, Responsive Design
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Cross Browser Testing & Debugging
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Cross Functional Teams
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Agile Development & Scrum
+
+            hr.m-0
+
+            // Resume
+            section#resume.resume-section
+                .resume-section-content
+                    h2.mb-5 Resume
+                    p
+                        | Click below for a resume copy
+                    a.btn.btn-primary(href="https://docs.google.com/document/d/1O0-tMmNQlO87C6ctlWJSyVbPrd_DRH5WlYYjtvmBQ_U/edit?usp=sharing" target="_blank") Resume
+
+            hr.m-0
+
+            // Awards
+            //- section#awards.resume-section
+            //-     .resume-section-content
+            //-         h2.mb-5 Awards & Certifications
+            //-         ul.fa-ul.mb-0
+            //-             li
+            //-                 span.fa-li
+            //-                     i.fas.fa-trophy.text-warning
+            //-                 | Google Analytics Certified Developer
+            //-             li
+            //-                 span.fa-li
+            //-                     i.fas.fa-trophy.text-warning
+            //-                 | Mobile Web Specialist - Google Certification
+            //-             li
+            //-                 span.fa-li
+            //-                     i.fas.fa-trophy.text-warning
+            //-                 | 1
+            //-                 sup st 
+            //-                 | Place - University of Colorado Boulder - Emerging Tech Competition 2009
+            //-             li
+            //-                 span.fa-li
+            //-                     i.fas.fa-trophy.text-warning
+            //-                 | 1
+            //-                 sup st 
+            //-                 | Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+            //-             li
+            //-                 span.fa-li
+            //-                     i.fas.fa-trophy.text-warning
+            //-                 | 2
+            //-                 sup nd 
+            //-                 | Place - University of Colorado Boulder - Emerging Tech Competition 2008
+            //-             li
+            //-                 span.fa-li
+            //-                     i.fas.fa-trophy.text-warning
+            //-                 | 1
+            //-                 sup st 
+            //-                 | Place - James Buchanan High School - Hackathon 2006
+            //-             li
+            //-                 span.fa-li
+            //-                     i.fas.fa-trophy.text-warning
+            //-                 | 3
+            //-                 sup rd 
+            //-                 | Place - James Buchanan High School - Hackathon 2005
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
